@@ -1,0 +1,107 @@
+THIS IS THE OUTPUT BY RUNNING THE CODE FILE football_prediction.py
+
+Microsoft Windows [Version 10.0.18363.1316]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+D:\Programming\Python_database\Web_Scraping_Python_Beautiful_Soup>python -u "c:\Users\kushk\Desktop\Projects For Semester 5\Final Files\ModellingFootballAsMarkovProcess.py"
+D:\Programming\Python_database\Web_Scraping_Python_Beautiful_Soup
+['Beautiful_Soup_Tutorialspoint.pdf', 'BlueStacksInstaller_4.250.0.1070_native_b9f20fd6f6aa0a12036107691465bd49_VGhlIEFtYXppbmcgU3BpZGVyLU1hbg==.exe', 'bs4_code1.py', 'Overview_Installation_Code1.py', 
+'Souping_Code2.py', '__pycache__']
+(380, 20)
+    HomeTeam     AwayTeam  FTHG  FTAG FTR  HTHG  HTAG HTR  HS  AS  HST  AST  HF  AF  HC  AC  HY  AY  HR  AR
+0  Blackburn       Wolves     1     2   A     1     1   D  16  13    8    4  14  10  12   6   4   2   0   0
+1     Fulham  Aston Villa     0     0   D     0     0   D  13   7    9    1  10  18   2   3   2   4   0   0
+2  Liverpool   Sunderland     1     1   D     1     0   H  11  15    4    6  17  12   6   3   4   4   0   0
+3  Newcastle      Arsenal     0     0   D     0     0   D   6   9    1    4   9  11   2   5   3   5   0   1
+4        QPR       Bolton     0     4   A     0     1   A  13  13    7    7   9  16   3   2   1   2   1   0        HomeTeam    AwayTeam  FTHG  FTAG FTR  HTHG  HTAG HTR  HS  AS  HST  AST  HF  AF  HC  AC  HY  AY  HR  AR
+375  Sunderland  Man United     0     1   A     0     1   A   6  17    5    9  14  11   1   9   3   3   0   0
+376     Swansea   Liverpool     1     0   H     0     0   D  13  14    8    9   5   5   6   5   1   1   0   0
+377   Tottenham      Fulham     2     0   H     1     0   H  15  10    9    7   8  12   9   3   0   2   0   0
+378   West Brom     Arsenal     2     3   A     2     2   D  12  12    8    8  12  10   9   5   0   1   0   0
+379       Wigan      Wolves     3     2   H     2     1   H  14  10   10    7  15   9   9   2   1   2   0   0
+    FTR
+0     A
+1     D
+2     D
+3     D
+4     A
+..   ..
+375   A
+376   H
+377   H
+378   A
+379   H
+
+[380 rows x 1 columns]
+    HomeTeam     AwayTeam  FTHG  FTAG FTR  HTHG  HTAG HTR  HS  AS  HST  AST  HF  AF  HC  AC  HY  AY  HR  AR
+0  Blackburn       Wolves     1     2   A     1     1   D  16  13    8    4  14  10  12   6   4   2   0   0
+1     Fulham  Aston Villa     0     0   D     0     0   D  13   7    9    1  10  18   2   3   2   4   0   0
+2  Liverpool   Sunderland     1     1   D     1     0   H  11  15    4    6  17  12   6   3   4   4   0   0
+3  Newcastle      Arsenal     0     0   D     0     0   D   6   9    1    4   9  11   2   5   3   5   0   1
+4        QPR       Bolton     0     4   A     0     1   A  13  13    7    7   9  16   3   2   1   2   1   0
+380
+All Teams List
+ ['Arsenal', 'Aston Villa', 'Blackburn', 'Bolton', 'Chelsea', 'Everton', 'Fulham', 'Liverpool', 'Man City', 'Man United', 'Newcastle', 'Norwich', 'QPR', 'Stoke', 'Sunderland', 'Swansea', 'Tottenham', 'West Brom', 'Wigan', 'Wolves']
+       HomeTeam     AwayTeam FTR  HST  AST  HC  AC       HAS       HDS       AAS       ADS
+0     Blackburn       Wolves   A    8    4  12   6  0.860927  1.428571  0.909091  1.291391
+1        Fulham  Aston Villa   D    9    1   2   3  1.192053  1.125541  0.735931  0.927152
+2     Liverpool   Sunderland   D    4    6   6   3  0.794702  0.692641  0.822511  0.960265
+3     Newcastle      Arsenal   D    1    4   2   5  0.960265  0.735931  1.515152  1.059603
+4           QPR       Bolton   A    7    7   3   2  0.794702  1.082251  0.995671  1.258278
+..          ...          ...  ..  ...  ...  ..  ..       ...       ...       ...       ...
+375  Sunderland   Man United   A    5    9   1   9  0.860927  0.735931  1.601732  0.463576
+376     Swansea    Liverpool   H    8    9   6   5  0.894040  0.779221  0.995671  0.794702
+377   Tottenham       Fulham   H    9    7   9   3  1.291391  0.735931  0.519481  0.827815
+378   West Brom      Arsenal   A    8    8   9   5  0.695364  0.952381  1.515152  1.059603
+379       Wigan       Wolves   H   10    7   9   2  0.728477  1.168831  0.909091  1.291391
+
+[380 rows x 11 columns]
+Aveage Home Goals 1.5894736842105264
+Average Away Goals 1.2157894736842105
+Average Home Points 1.5947368421052632
+Average Away Points 1.1605263157894736
+C:\Users\kushk\AppData\Local\Programs\Python\Python38\lib\site-packages\sklearn\utils\validation.py:72: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  return f(**kwargs)
+(380,)
+['H' 'A' 'A' 'A' 'H' 'A' 'A' 'H' 'A' 'H' 'A' 'A' 'A' 'A' 'A' 'H' 'A' 'A'
+ 'A' 'A' 'A' 'A' 'A' 'A' 'A' 'H' 'A' 'H' 'A' 'A' 'H' 'H' 'A' 'A' 'H' 'H'
+ 'A' 'A' 'A' 'A' 'H' 'H' 'A' 'A' 'H' 'H' 'A' 'A' 'A' 'A' 'A' 'A' 'A' 'A'
+ 'A' 'A' 'H' 'A' 'A' 'A' 'H' 'H' 'A' 'H' 'H' 'H' 'A' 'A' 'A' 'A' 'A' 'A'
+ 'A' 'A' 'A' 'H' 'A' 'H' 'A' 'H' 'H' 'A' 'A' 'H' 'A' 'H' 'H' 'H' 'A' 'H'
+ 'A' 'A' 'H' 'H' 'A' 'H' 'H' 'A' 'H' 'A' 'H' 'A' 'A' 'A' 'A' 'H' 'A' 'H'
+ 'A' 'A' 'A' 'H' 'H' 'A' 'A' 'A' 'H' 'H' 'A' 'A' 'H' 'A' 'A' 'A' 'A' 'H'
+ 'H' 'A' 'A' 'A' 'H' 'A' 'H' 'A' 'A' 'H' 'A' 'A' 'A' 'A' 'H' 'A' 'A' 'H'
+ 'A' 'H' 'A' 'A' 'A' 'H' 'A' 'A' 'A' 'A' 'H' 'H' 'A' 'H' 'A' 'H' 'H' 'H'
+ 'A' 'H' 'A' 'H' 'H' 'A' 'A' 'H' 'A' 'A' 'A' 'A' 'A' 'A' 'A' 'H' 'A' 'A'
+ 'A' 'A' 'H' 'H' 'A' 'H' 'A' 'A' 'A' 'H' 'H' 'A' 'H' 'H' 'A' 'A' 'H' 'H'
+ 'A' 'A' 'A' 'A' 'A' 'A' 'A' 'A' 'H' 'A' 'H' 'A' 'A' 'A' 'H' 'A' 'A' 'H'
+ 'A' 'H' 'H' 'H' 'A' 'A' 'A' 'A' 'H' 'H' 'H' 'A' 'A' 'A' 'A' 'A' 'A' 'H'
+ 'A' 'H' 'A' 'H' 'A' 'A' 'H' 'H' 'A' 'A' 'A' 'H' 'H' 'A' 'A' 'H' 'A' 'A'
+ 'H' 'A' 'A' 'A' 'H' 'H' 'A' 'A' 'H' 'A' 'A' 'A' 'A' 'H' 'A' 'A' 'H' 'A'
+ 'A' 'A' 'A' 'A' 'H' 'A' 'A' 'A' 'A' 'A' 'H' 'A' 'A' 'H' 'A' 'A' 'A' 'H'
+ 'A' 'A' 'A' 'A' 'H' 'A' 'A' 'A' 'H' 'H' 'A' 'H' 'A' 'A' 'H' 'A' 'A' 'H'
+ 'A' 'A' 'H' 'H' 'H' 'A' 'A' 'H' 'A' 'A' 'A' 'A' 'A' 'A' 'A' 'A' 'A' 'H'
+ 'H' 'A' 'A' 'A' 'H' 'H' 'A' 'A' 'A' 'A' 'H' 'A' 'A' 'A' 'A' 'A' 'A' 'A'
+ 'A' 'H' 'H' 'H' 'A' 'H' 'A' 'H' 'H' 'A' 'A' 'A' 'A' 'A' 'A' 'A' 'H' 'H'
+ 'H' 'A' 'H' 'A' 'A' 'H' 'A' 'A' 'A' 'A' 'A' 'A' 'H' 'A' 'H' 'A' 'A' 'A'
+ 'H' 'H']
+The probabililty of moving from state of Defending to free kick in Attack 0.0027
+The probability of moving from state of Central to Attacking Free Kick 0.006
+The probability of moving from state of Attacking to Corner 0.0786
+The probability of moving from state of Defending Free Kick to Goal Kick 0.1307
+The probability of moving from Throw In Central to Attacking Pass 0.0132
+The next possible jumpt from Atacking Throw: X10
+The next possible jumpt from Corner: X1
+
+Creating Random Markov Chain, this is one instance of what Markov Chain could look like if we start from Goal Kick
+
+['X1', 'X0', 'X0', 'X0', 'X0', 'X0', 'X0', 'X1', 'X0', 'X1']
+
+Another Possible Markov Chain from a Defensive Pass could be
+
+['X6', 'X1', 'X1', 'X2', 'X10', 'X1', 'X2', 'X5', 'X0', 'X0']
+
+D:\Programming\Python_database\Web_Scraping_Python_Beautiful_Soup>
+
+
+
