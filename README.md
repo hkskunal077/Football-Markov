@@ -8,7 +8,9 @@ modellingfootballmarkovprocess.py files contains the python code for
 Data Preparation, Data Munging, and construction of Markov Chain using Python.
 
 
-
+The transitions in Markov Chain is considered when a node or a player passess the ball forward.
+THere are total 11 states, based on passing, throw-in and freekick in all 3 areas of field.
+Additionaly scoring a Goal is considered as a terminating state.
 
 
 
